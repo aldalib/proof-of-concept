@@ -1,0 +1,14 @@
+[package]
+name = "inject"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+frida-gum = { version = "0.13.7", features = ["auto-download"] }
+thiserror = "1.0.63"
+
+[build-dependencies]
+bindgen = "0.70.1"
